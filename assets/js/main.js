@@ -20,7 +20,7 @@ fetch("https://picsum.photos/v2/list")
 
       a.href = data.download_url;
       a.target = "_blank";
-      a.textContent = "See more";
+      a.textContent = "-> See more <-";
 
       btn.append(a);
       fig.append(img, figCap, btn);
