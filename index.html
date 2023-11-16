@@ -11,6 +11,10 @@
         box-sizing: border-box;
       }
 
+      html {
+        font-family: sans-serif;
+      }
+
       body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -21,6 +25,18 @@
         background: #474bff;
         background: -webkit-linear-gradient(0deg, #474bff 0%, #bc48ff 100%);
         background: linear-gradient(0deg, #474bff 0%, #bc48ff 100%);
+      }
+
+      .title {
+        grid-column: 1 / -1;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.284);
+        color: white;
+        border-radius: 20px;
+        margin: 0 auto;
+        padding: 0.25em;
+        font-weight: 700;
+        font-size: 2rem;
       }
 
       img {
@@ -68,6 +84,7 @@
     </style>
   </head>
   <body>
+    <div class="title">Picsum Fetch</div>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
